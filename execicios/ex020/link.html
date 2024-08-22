@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-classe e pseudo-elementos</title>
+    <style>
+         a{
+            text-decoration: none;
+         }
+
+         a:hover{
+            color: black;
+            text-decoration: underline;
+         }
+
+         a:active{
+            color: yellow;
+         }
+
+         a.especial::before{
+            content: '[Link]';
+         }
+
+         a.especial::after{
+            content: '[Link]';
+         }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabra.github.io" target="_blank">Repositorio do github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do curso em video</a></li>
+    </ul>
+</body>
+</html>

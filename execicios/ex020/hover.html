@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-classe</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 200px;
+        }
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando as pseudo-classe</h1>
+    <p>Meu nome é Aguinaldo estou apredendo HTML5 e CSS3
+        Estou gostando de aprender
+    </p> 
+    <h2>Teste com o hover</h2>
+    <div>
+        Passe o mouse aqui...
+        <p>Esconder o meu apelido.</p>
+    </div>
+    <p>Fim do Teste</p>
+</body>
+</html>
