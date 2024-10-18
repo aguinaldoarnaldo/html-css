@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 500px;
+
+        }
+
+        caption {
+             font-size: 1.5em;
+             font-weight: bold;
+             padding: 10px;
+             background-color: lightgrey;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    ANATONIA PARA TABELAS GRANDES
+    TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+   <table>
+        <caption>População das unidades federativas</caption>
+    <thead>
+        <tr>
+            <th>Estado</th>
+            <th>População</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Luanda</td>
+            <td>33 767 762</td>
+        </tr>
+        <tr>
+            <td>Malanje</td>
+            <td>21 878 678</td>
+        </tr>
+        <tr>
+            <td>Uíge</td>
+            <td>54 123 545</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Total de Habitantes</th>
+            <td>0000000</td>
+        </tr>
+    </tfoot>
+   </table>
+</body>
+</html>
