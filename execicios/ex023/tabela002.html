@@ -11,6 +11,7 @@
         }
         table{
             width: 500px;
+            border-collapse: collapse ;
 
         }
 
@@ -25,10 +26,19 @@
             border: 1px solid black;
             padding: 10px;
         }
+        
 
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        tbody>tr:nth-child(even ){
+            background-color: lightgray;
+        }
+
+        td.num{
+            text-align: right;
         }
     </style>
 </head>
@@ -49,29 +59,112 @@
         <caption>População das unidades federativas</caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Área</th>
+            <th scope="col">População</th>
         </tr>
     </thead>
     <tbody>
         <tr>
+            <td>Bengo</td>
+            <td class="num">15 506</td>
+            <td class="num">356 641</td>
+        </tr>
+        <tr>
+            <td>Benguela</td>
+            <td class="num">31 788</td>
+            <td class="num">2 231 385</td>
+        </tr> 
+        <tr>
+            <td>Bie</td>
+            <td class="num">70 314</td>
+            <td class="num">1 455 255</td>
+        </tr>
+        <tr>
+            <td>Cabinda</td>
+            <td class="num">7 270</td>
+            <td class="num">716 076</td>
+        </tr>
+        <tr>
+            <td>Cuando Cubango</td>
+            <td class="num">199 049</td>
+            <td class="num">534 002</td>
+        </tr>
+        <tr>
+            <td>Cuanza Norte</td>
+            <td class="num">24 190</td>
+            <td class="num">443 386</td>
+        </tr>
+        <tr>
+            <td>Cuanza Sul</td>
+            <td class="num">55 660</td>
+            <td class="num">1 881 873</td>
+        </tr>
+        <tr>
+            <td>Cunene</td>
+            <td class="num">89 342</td>
+            <td class="num">990 087</td>
+            
+        </tr>
+        <tr>
+             <td>Huambo</td>
+             <td class="num">34 274	</td>
+             <td class="num">2 019 555</td>
+        </tr>
+         <tr>
+            <td>Huíla</td>
+            <td class="num">75 002	</td>
+            <td class="num">2 497 422	</td>
+           
+        </tr>
+        <tr>
             <td>Luanda</td>
-            <td>33 767 762</td>
+            <td class="num">18 283</td>
+            <td class="num">6 945 386</td>
+        </tr>
+        <tr>
+            <td>Lunda Norte</td>
+            <td class="num">102 783</td>
+            <td class="num">862 56</td>
+        </tr>
+        <tr>
+            <td>Lunda Sul</td>
+            <td class="num">45 649</td>
+            <td class="num">537 587	</td>
         </tr>
         <tr>
             <td>Malanje</td>
-            <td>21 878 678</td>
+            <td class="num">97 602</td>
+            <td class="num">986 363</td>
+        </tr>
+        <tr>
+            <td>Moxico</td>
+            <td class="num">223 023</td>
+            <td class="num">758 568</td>
+        </tr>
+        <tr>
+            <td>Namibe</td>
+            <td class="num">58 137</td>
+            <td class="num">495 326</td>
         </tr>
         <tr>
             <td>Uíge</td>
-            <td>54 123 545</td>
+            <td class="num">58 698</td>
+            <td class="num">1 483 118</td>
+        </tr>
+        <tr>
+            <td>Zaire</td>
+            <td class="num">40 130</td>
+            <td class="num">594 428</td>
         </tr>
     </tbody>
     <tfoot>
         <tr>
-            <th>Total de Habitantes</th>
-            <td>0000000</td>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num">1 246 700</td>
+            <td class="num">25 789 024</td>
         </tr>
+       
     </tfoot>
    </table>
 </body>
